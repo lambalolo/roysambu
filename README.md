@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+<title>ROYSA</title>
+<style>
+	    *{
+		   margin: 0;
+		   padding: 0;
+		}
+	    #map {
+	       height: 500px;
+		   width: 100%;
+		}
+</style>	
+</head>
+<body>
 
-You can use the [editor on GitHub](https://github.com/lambalolo/roysambu/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lambalolo/roysambu/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<div id="map">
+</div>
+<script>
+	function initMap() {
+		var location = {lat:-1.218459 , lng:36.886906}
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 4,
+			center: location 
+			});
+		var marker = new gogle.maps.Marker({
+			position: location,
+			map: map			
+		});		
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/
+js?key=AIzaSyAsfdiHHtiHZde-UFbxZBiVO064E-1WY04 ></script>
+</body>
+</html>
+	
